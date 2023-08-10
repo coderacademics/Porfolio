@@ -1,0 +1,92 @@
+ @import url('https://fonts.googleapis.com/css2?family=REM:wght@400;500;600;700&display=swap');
+
+ * {
+   margin: 0;
+   padding: 0;
+ }
+
+ .navbar-container {
+   padding-top: 1em;
+   padding-bottom: 1em;
+   display: flex;
+   width: 100vw;
+   justify-content: space-around;
+   align-items: center;
+   color: white;
+   font-family: 'REM', sans-serif;
+   position: sticky;
+   top: 0;
+   z-index: 10;
+   /* background-color: aqua; */
+ }
+ .scrolled {
+   border: 0.05em solid #064287;
+   box-shadow: 2px 2px 5px #0d396b;
+   background-color: #032347ea;
+ }
+
+ .nav-items-container {
+   display: flex;
+   list-style: none;
+ }
+
+ .nav-items {
+   padding-left: 0.9em;
+   padding-right: 0.9em;
+   cursor: pointer;
+   position: relative;
+   list-style: none;
+   color: white;
+   text-decoration: none;
+ }
+
+ .nav-items::after {
+   position: absolute;
+   content: "";
+
+   bottom: -0.2em;
+   width: 0px;
+   left: 0.64em;
+ }
+
+ .nav-items:hover {
+   color: #EFDC2E;
+ }
+
+ .nav-items:hover::after {
+   width: 70%;
+   border: 1px solid #EFDC2E;
+   transition: width 0.3s ease-out;
+ }
+
+ .hire-me-btn {
+   display: inline-block;
+   padding: 0.6em;
+   border-radius: 5px;
+   border: 0.15em solid #EFDC2E;
+   background-color: transparent;
+   color: white;
+   position: relative;
+   overflow: hidden;
+   font-size: calc(90%);
+ }
+
+ .hire-me-btn::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: -100%;
+   width: 100%;
+   z-index: -1;
+   height: 100%;
+   background-color: #EFDC2E;
+   transition: left 0.3s ease-in-out;
+ }
+
+ .hire-me-btn:hover {
+   color: #000;
+ }
+
+ .hire-me-btn:hover::before {
+   left: 0;
+ }

@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=REM:wght@400;500;600;700&display=swap');
+
+.about-me-container {
+    color: white;
+    font-family: 'REM ', sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 6em;
+    /* border: 2px solid white; */
+    height: 95vh;
+}
+
+.about-me-heading {
+    padding-top: 3em;
+}
+
+.underline-animated {
+    height: 0.5em;
+    border-radius: 5px;
+    width: 20vw;
+    background-color: #635f37e6;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+@keyframes AnimatedUnderline {
+
+    0%,
+    100% {
+        left: 0;
+    }
+
+    50% {
+        left: 100%;
+    }
+}
+
+.animated-underline-box {
+    height: 0.5em;
+    width: 1em;
+    border-radius: 5px;
+    background-color: #EFDC2E;
+    position: absolute;
+    animation: AnimatedUnderline 3s cubic-bezier(0.52, 0.12, 1, 0.3) 100ms infinite;
+}
+
+.about-me-details {
+    margin-top: 5.5em;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 8em;
+    padding-right: 8em;
+}
+
+.my-details {
+    text-align: left;
+
+}
+
+.details-list {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    color: #b6b6c4;
+}
+
+.image-container {
+    border: 0.6em solid #635f37e6;
+    border-radius: 3%;
+    overflow: hidden;
+}
+
+.pic {
+    height: 40vh;
+    width: 35vw;
+}
+
+.resume-btn {
+    display: inline-block;
+   padding: 1em;
+   border-radius: 5px;
+   border: 0.15em solid #EFDC2E;
+   background-color: transparent;
+   color: white;
+   position: relative;
+   overflow: hidden;
+   font-size: calc(90%);
+  }
+
+  .resume-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+    background-color: #EFDC2E;
+    transition: left 0.3s ease-in-out;
+  }
+
+  .resume-btn:hover {
+    color: #000;
+  }
+
+  .resume-btn:hover::before {
+    left: 0;
+  }

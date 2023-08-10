@@ -1,0 +1,16 @@
+.footer-container{
+    color: #FFF;
+    height: 10vh;
+    font-family: 'REM',sans-serif;
+    border: 0.05em solid #064287;
+    box-shadow: 2px 2px 5px #0d396b;
+    background-color: #032347ea;
+    position: relative;
+    margin-top: 1em;
+}
+.footer-text{
+    position: absolute;
+    align-items: center;
+    right: 4em;
+    top: 50%;
+}

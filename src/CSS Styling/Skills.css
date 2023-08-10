@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=REM:wght@400;500;600;700&display=swap');
+.skills-main-container{
+    color: #fff;
+    font-family: 'REM',sans-serif;
+    height: 95vh;
+}
+.heading{
+    text-align: center;
+    font-size: 3em;
+}
+.skills-container-circular{
+    margin-top: 6em;
+    display: flex;
+    justify-content: space-around;
+}
+.circular-skills{
+    height: 30vh;
+    width: 22vw;
+    border: 0.05em solid #064287;
+    box-shadow: 2px 2px 5px #0d396b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5em;
+}
+.circular-skills:hover{
+    cursor: pointer;
+    margin-top: -0.5%;
+    transition: margin-top 300ms ease-in-out;
+}
+.circles-container{
+    position: relative;
+}
+.circular-progress{
+    height: 18vh;
+    width: 18vh;
+    box-sizing: border-box;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circular-progress::before{
+    content: "";
+    height: 15vh;
+    width: 15vh;
+    box-sizing: border-box;
+    background-color: #042b57;
+    border-radius: 50%;
+    position: absolute;
+}
+.progress-value-circular{
+    position: absolute;
+    z-index: 2;
+    top: 38%;
+    left: 30%;
+    color: white;
+    font-size: calc(100% + 0.7em) ;
+}
+.skills-name{
+    margin-top: 1em;
+}
+.skills-container-linear{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 40%;
+    justify-content: space-around;
+    margin-top: 3em;
+}
+.linear-skills-container{
+    width : calc(50vw - 3em);
+    /* border: 2px solid white; */
+    margin-top: 1.5em;
+    
+}
+.linear-progress-container{
+    margin-top: 1em;
+    height: 2vh;
+    border-radius: 7px;
+    background-color: #efdc2e;
+    /* width: 40vw; */
+    position: relative;
+}
+.linear-progress-container::after{
+    content: "";
+    height: 2vh;
+    background-color: #595a3b;
+    position: absolute;
+    border-radius: 7px;
+    z-index: -2;
+    width: 45vw;
+}

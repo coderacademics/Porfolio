@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=REM:wght@400;500;600;700&display=swap');
+
+.resume-container {
+    font-family: "REM", sans-serif;
+    color: #FFF;
+    height: 98vh;
+    margin-bottom: 3em;
+}
+
+.heading {
+    margin-top: 3em;
+}
+
+.timeline-heading {
+    font-size: 135%;
+}
+
+.timeline-year {
+    width: 50%;
+    margin-top: 1.5em;
+    margin-right: 1.5em;
+}
+.timeline-year p{
+    background-color: #0c4c90;
+    display: inline-block;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+    border-radius: 10px;
+}
+.timeline {
+    color: #FFF;
+    /* border: 2px solid red; */
+    display: flex;
+}
+
+.timeline-year-details {
+    border-left: 0.3em solid #0c4c90;
+    margin-left: 0.6em;
+    padding: 2.5em;
+    padding-top: 1.3em;
+    position: relative;
+    /* border-radius: 5px; */
+}
+
+.timeline-details-para {
+    color: #647f93;
+    width: 30vw;
+    /* border: 2px solid red; */
+}
+
+
+/* timeline shapes */
+.rounded-circle{
+    height: 1em;
+    width: 1em;
+    border: 0.3em solid #0c4c90;
+    background-color: #042b57;
+    border-radius: 50%;
+    position: absolute;
+    left: -1em;
+}
+.line{
+    width: 4em;
+    border: 0.2em solid #0c4c90;
+    position: absolute;
+    left: -2.5em;
+    top: 1.9em;
+    z-index: -2;
+    border-radius: 5px;
+}
