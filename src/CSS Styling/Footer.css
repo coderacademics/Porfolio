@@ -14,3 +14,10 @@
     right: 4em;
     top: 50%;
 }
+@media screen and (max-width: 414px) and (min-width: 360px) {
+    /* .footer-container{
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+    } */
+}

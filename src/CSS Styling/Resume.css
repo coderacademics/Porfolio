@@ -6,7 +6,13 @@
     height: 98vh;
     margin-bottom: 3em;
 }
-
+@media screen and (max-width: 414px) and (min-width: 360px) {
+    .resume-container{
+        height: auto;
+        /* max-height: max-content; */
+        overflow: hidden;
+    }
+}
 .heading {
     margin-top: 3em;
 }

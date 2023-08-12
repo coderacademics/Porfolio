@@ -1,10 +1,17 @@
-
+.contactme{
+    height: fit-content;
+}
 .contact-me-heading{
     text-align: center;
     font-family: 'REM',sans-serif;
     color:#fff;
     /* margin-bottom: 2em; */
     font-size: 2.5em;
+}
+@media screen and (max-width: 414px) and (min-width: 360px) {
+    .contact-me-heading{
+        font-size: 1.5em;
+    }
 }
 .contact-me-container {
     color: #fff;
@@ -13,11 +20,26 @@
     display: flex;
     justify-content: space-around;
 }
-
+@media screen and (max-width: 414px) and (min-width: 360px) {
+    .contact-me-container{
+      flex-wrap: wrap;
+      flex-basis: 100%;
+      height: fit-content;
+    }
+    .phone-info .email-info{
+        width: 90vw;
+        height: calc(fit-content+10vh)
+    }
+}
 .contact-info {
     /* border: 2px solid #fff; */
     width: 40vw;
     font-family: 'REM', sans-serif;
+}
+@media screen and (max-width: 414px) and (min-width: 360px) {
+    .contact-info{
+        width: 80vw;
+    }
 }
 
 .contact-info h2 {
@@ -64,7 +86,29 @@
     border-radius: 0.5em;
     position: relative;
 }
-
+@media screen and (max-width: 414px) and (min-width: 360px) {
+    .phone-info{
+        width: 80vw;
+        height: fit-content;
+        margin: 0.5em;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        padding-top: 0.5em;
+        margin-bottom: 1em;
+    }
+    .email-info{
+        width: 80vw;
+        height: fit-content;
+        margin: 0.5em;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        padding-top: 0.5em;
+        margin-bottom: 1em;
+        margin-top: 2.5em;
+    }
+}
 .contact-me-form {
     display: flex;
     flex-direction: column;
@@ -75,7 +119,11 @@
     border-radius: 10px;
     background-color: #042b57ac;
 }
-
+@media screen and (max-width: 414px) and (min-width: 360px) {
+    .contact-me-form{
+        width: 70vw;
+    }
+}
 .contact-me-form label,
 input,
 textarea {

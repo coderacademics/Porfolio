@@ -5,16 +5,32 @@
     height: 98vh;
 
 }
+@media screen and (max-width: 414px) and (min-width: 360px) {
+    .services-container{
+        height: auto;
+    }
+}
 .heading{
     margin-top: 4em;
 }
-
+@media screen and (max-width: 414px) and (min-width: 360px) {
+    .heading{
+        margin-top: 2em;
+        font-size: 2em;
+    }
+}
 .services-list{
     /* border: 2px solid wheat; */
     display: flex;
     padding: 2em;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+@media screen and (max-width: 414px) and (min-width: 360px) {
+    .services-ist{
+        flex-direction: column;
+        flex-basis: 100%;
+    }
 }
 .services{
     height: 30vh;
@@ -25,6 +41,12 @@
     box-shadow: 2px 2px 5px #0d396b;
     border-radius: 0.5em;
     position: relative;
+}
+@media screen and (max-width: 414px) and (min-width: 360px) {
+    .services{
+        width: 90vw;
+        height: fit-content;
+    }
 }
 .services:hover{
     cursor: pointer;

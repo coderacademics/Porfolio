@@ -4,6 +4,13 @@
     font-family: 'REM',sans-serif;
     height: 95vh;
 }
+@media screen and (max-width: 414px) and (min-width: 360px) {
+    .skills-main-container{
+        max-height: fit-content;
+        height: auto;
+        margin-top: -2em;
+    }
+}
 .heading{
     text-align: center;
     font-size: 3em;
@@ -12,6 +19,12 @@
     margin-top: 6em;
     display: flex;
     justify-content: space-around;
+}
+@media screen and (max-width: 414px) and (min-width: 360px) {
+    .skills-container-circular{
+        flex-wrap: wrap;
+        flex-basis: 50%;
+    }
 }
 .circular-skills{
     height: 30vh;
@@ -23,6 +36,12 @@
     align-items: center;
     justify-content: center;
     border-radius: 0.5em;
+}
+@media screen and (max-width: 414px) and (min-width: 360px) {
+    .circular-skills{
+        width: 35vw;
+        height: 30vh;
+    }
 }
 .circular-skills:hover{
     cursor: pointer;

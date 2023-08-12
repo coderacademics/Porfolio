@@ -8,8 +8,8 @@ import Services from "./Components/Services";
 import Skills from "./Components/Skills";
 import Resume from "./Components/Resume";
 function App() {
-    return (<div className="App">
-        <Router>
+    return <div className="App">
+        <Router basename="/Porfolio">
             <Routes>
                 <Route path="/" element={<HomePage />}></Route>
                 <Route path="/aboutme" element={<AboutMe />}></Route>
@@ -21,6 +21,5 @@ function App() {
             </Routes>
         </Router>
     </div>
-    );
 }
 export default App;
