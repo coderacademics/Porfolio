@@ -8,6 +8,7 @@
  .navbar-container {
    padding-top: 1em;
    padding-bottom: 1em;
+   /* padding: 1em; */
    display: flex;
    width: 100vw;
    justify-content: space-around;
@@ -19,15 +20,47 @@
    z-index: 10;
    /* background-color: aqua; */
  }
+
+ @media screen and (max-width: 414px) and (min-width: 360px) {
+
+   .navbar-container {
+     position: relative;
+   }
+ }
+
  .scrolled {
    border: 0.05em solid #064287;
    box-shadow: 2px 2px 5px #0d396b;
-   background-color: #032347ea;
+   background-color: #032449ea;
  }
 
  .nav-items-container {
    display: flex;
    list-style: none;
+ }
+ .visible .invisible{
+  display: visible;
+ }
+
+ @media screen and (max-width: 414px) and (min-width: 360px) {
+   .nav-items-container {
+     /* display: none; */
+     flex-direction: column;
+     position: absolute;
+     top: 100%;
+     width: 100vw;
+     text-align: center;
+     background-color: #032449ea;
+   }
+   .visible{
+    display: visible;
+   }
+   .invisible{
+    display: none;
+   }
+   .hire-me-btn {
+     display: none;
+   }
  }
 
  .nav-items {
@@ -71,6 +104,13 @@
    font-size: calc(90%);
  }
 
+ @media screen and (max-width: 414px) and (min-width: 360px) {
+   .hire-me-btn {
+     display: none;
+   }
+
+ }
+
  .hire-me-btn::before {
    content: "";
    position: absolute;
@@ -90,3 +130,17 @@
  .hire-me-btn:hover::before {
    left: 0;
  }
+
+
+ .hamburger-menu {
+   display: none;
+ }
+
+ @media only screen and (max-width: 414px) and (min-width: 360px) {
+   .hamburger-menu {
+     display: flex;
+     position: absolute;
+     right: 0;
+     color: #fff;
+   }
+  }
