@@ -38,8 +38,9 @@
    display: flex;
    list-style: none;
  }
- .visible .invisible{
-  display: visible;
+
+ .visible .invisible {
+   display: visible;
  }
 
  @media screen and (max-width: 414px) and (min-width: 360px) {
@@ -51,15 +52,20 @@
      height: 100vh;
      width: 100vw;
      text-align: center;
-    align-items: stretch;
-     background-color: #032449ea;
+     align-items: stretch;
+     background-color: #032449;
+     z-index: 3;
+     flex: 1;
    }
-   .visible{
-    display: visible;
+
+   .visible {
+     display: visible;
    }
-   .invisible{
-    display: none;
+
+   .invisible {
+     display: none;
    }
+
    .hire-me-btn {
      display: none;
    }
@@ -145,4 +151,4 @@
      right: 0;
      color: #fff;
    }
-  }
+ }
