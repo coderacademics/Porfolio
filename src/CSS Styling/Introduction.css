@@ -13,10 +13,11 @@
     }
 }
 .profile-pic-container{
-    width: 150px;
-    height: 150px;
+    width: 165px;
+    height: 155px;
     border: 2px solid white;
     border-radius: 50%;
+    background-color: #EFDC2E;
 }
 .myself-intro-container{
     margin-top: 1em;

@@ -1,7 +1,12 @@
 import React from "react";
 import { Typewriter } from 'react-simple-typewriter';
 import '../CSS Styling/Introduction.css'
-import ProfilePic from '../pictures/profile_pic_sample.png';
+// import ProfilePic from '../pictures/profile_pic_sample.png';
+// import ProfilePic from '../pictures/profile_pic-removebg-preview.png';
+// import ProfilePic from '../pictures/profile_pic_2_no_bg.png';
+// import ProfilePic from '../pictures/IMG_20230814_094745-removebg-preview.png';
+import ProfilePic from '../pictures/profile_pic-removebg-preview (1).png';
+
 import Github from '../pictures/github.png';
 import LinkedIn from '../pictures/linkedIN.png';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -9,7 +14,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 function Introduction() {
     return <>
         <div className="introduction-container" id="intro">
-            <img className="profile-pic-container" src={ProfilePic} />
+            <img className="profile-pic-container" src={ProfilePic} height={150} width={250}  />
             <h1 className="myself-intro-container">Hi, I am <nbsp />
                 <span className="changing-text"><b>
                     <Typewriter
