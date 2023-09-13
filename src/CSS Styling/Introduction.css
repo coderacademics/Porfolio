@@ -1,0 +1,56 @@
+.introduction-container{
+    color: white;
+    /* border: 2px solid white; */
+    margin-top: 8em;
+    text-align: center;
+    font-family: 'REM', sans-serif;
+    position: relative;
+}
+@media screen and (max-width: 414px) and (min-width: 360px) {
+    .introduction-container{
+        margin-left: 2.5em;
+        margin-right: 2.5em;
+    }
+}
+.profile-pic-container{
+    width: 165px;
+    height: 155px;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: #EFDC2E;
+}
+.myself-intro-container{
+    margin-top: 1em;
+    font-size: 3em;
+}
+.changing-text{
+    color: #EFDC2E;
+}
+.skills-brief{
+    margin-top: 0.3em;
+    color: rgb(172, 172, 172);
+    font-size: 1.1em;
+    letter-spacing: 0.07em;
+}
+.media-handles-icons{
+    padding: 0.5em;
+    zoom: 150%;
+    margin-top: 1.5em;
+}
+@keyframes Icons {
+  0%{
+    height: 50px;
+    width: 50px;
+  }
+  100%{
+    height: 60px;
+    width: 60px;
+  }
+}
+
+.media-handles-icons:hover{
+    color: #EFDC2E;
+    margin-top: 1.2em;
+    cursor: pointer;
+}
+

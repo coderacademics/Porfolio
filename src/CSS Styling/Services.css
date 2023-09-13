@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=REM:wght@400;500;600;700&display=swap');
+.services-container{
+    font-family: "REM",sans-serif;
+    color: #FFF;
+    height: 98vh;
+
+}
+@media screen and (max-width: 414px) and (min-width: 360px) {
+    .services-container{
+        height: auto;
+    }
+}
+.heading{
+    margin-top: 4em;
+}
+@media screen and (max-width: 414px) and (min-width: 360px) {
+    .heading{
+        margin-top: 2em;
+        font-size: 2em;
+    }
+}
+.services-list{
+    /* border: 2px solid wheat; */
+    display: flex;
+    padding: 2em;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+@media screen and (max-width: 414px) and (min-width: 360px) {
+    .services-ist{
+        flex-direction: column;
+        flex-basis: 100%;
+    }
+}
+.services{
+    height: 30vh;
+    width: 35vw;
+    margin: 1em;
+    padding: 1em;
+    border: 0.05em solid #064287;
+    box-shadow: 2px 2px 5px #0d396b;
+    border-radius: 0.5em;
+    position: relative;
+}
+@media screen and (max-width: 414px) and (min-width: 360px) {
+    .services{
+        width: 90vw;
+        height: fit-content;
+    }
+}
+.services:hover{
+    cursor: pointer;
+    margin-top: -0.3%;
+    transition: margin-top 300ms ease-in-out;
+}
+.services h1{
+    position: absolute;
+    right: 1.2em;
+    top: 0.5em;
+    font-size: 3.5em;
+    color: #899fa9c8;
+}
+.services-list-heading{
+    margin-top: 0.8em;
+    background-color: #595a3b;
+    border-radius: 50%;
+    height: 2.5em;
+    width: 2.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 170%;
+    margin-left: 1em;
+}
+.services-details{
+    margin-top: 1em;
+    margin-left: 1em;
+}
+.services-details h3{
+    font-weight: 500;
+}
+.services-details p{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: #899fa9;
+}
